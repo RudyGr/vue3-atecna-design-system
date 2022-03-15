@@ -1,0 +1,21 @@
+{
+  "name": "@backlight-dev/tradition-recommend-qbqbg.vue3-l0s9jcwr",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "{{ homepage }}",
+  "scripts": {
+    "serve": "npx backlight@latest serve LUyEiVx0MnsK9FLftZEe --open"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.2",
+    "vue": "^3.1.4"
+  },
+  "devDependencies": {
+    "@divriots/dockit-core": "^0.7.2",
+    "@vue/test-utils": "latest",
+    "lit": "^2.0.2",
+    "prettier": "^2.3.2"
+  }
+}

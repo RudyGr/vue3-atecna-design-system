@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "outDir": "lib",
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["*"],
+      "@divriots/starter-vue3/*": ["*"]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@use '../../colors/src/colors';
+@use '../../typography/src/typography';
+@use '../../spacing/src/spacing';
+@use '../../elevation/src/elevation';
+@use '../../border-radius/src/border-radius';
+@use '../../transition/src/transition';
+@use '../../z-index/src/z-index';
+
+:where(html) {
+  @extend %colors;
+  @extend %typography;
+  @extend %spacing;
+  @extend %elevation;
+  @extend %border-radius;
+  @extend %transition;
+  @extend %z-index;
+}
+
+html {
+  --vue-font-family: var(--font-sans);
+  --vue-font-family-code: var(--font-mono);
+
+  --vue-font-size-000: var(--font-size-xx-small);
+  --vue-font-size-00: var(--font-size-x-small);
+  --vue-font-size-0: var(--font-size-small);
+  --vue-font-size-default: var(--font-size-medium);
+  --vue-font-size-subtitle: var(--font-size-large);
+  --vue-font-size-title: var(--font-size-x-large);
+
+  --vue-font-weight-default: var(--font-weight-normal);
+  --vue-font-weight-button: var(--font-weight-semibold);
+  --vue-font-weight-title: var(--font-weight-bold);
+
+  --vue-letter-spacing-normal: var(--letter-spacing-normal);
+  --vue-letter-spacing-button: var(--letter-spacing-loose);
+
+  --vue-line-height-normal: var(--line-height-normal);
+
+  --vue-color-white: var(--color-white);
+
+  --vue-color-focus-light: var(--color-blue-100);
+  --vue-color-primary-light: var(--color-green-500);
+  --vue-color-secondary-light: var(--color-slate-500);
+  --vue-color-surface-light: var(--color-gray-100);
+  --vue-color-border-light: var(--color-green-500);
+
+  --vue-spacing-00: var(--spacing-x-small);
+  --vue-spacing-0: var(--spacing-small);
+  --vue-spacing-default: var(--spacing-medium);
+  --vue-spacing-1: var(--spacing-large);
+  --vue-spacing-2: var(--spacing-x-large);
+
+  --vue-shadow-00: var(--shadow-x-small);
+  --vue-shadow-0: var(--shadow-small);
+  --vue-shadow-default: var(--shadow-medium);
+  --vue-shadow-1: var(--shadow-large);
+  --vue-shadow-2: var(--shadow-x-large);
+
+  --vue-border-radius-default: var(--border-radius-medium);
+  --vue-border-radius-pill: var(--border-radius-pill);
+}
+
+@import './light';
+@import './dark';
