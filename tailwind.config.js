@@ -26,6 +26,14 @@ const config = {
         primary: '#EAE8E8',
       },
     },
+    spacing: {
+      1: '8px',
+      2: '12px',
+      3: '16px',
+      4: '24px',
+      5: '32px',
+      6: '48px',
+    },
     boxShadow: {
       primary:
         '0px 3px 3px rgba(0, 0, 0, 0.02), 0px 6px 5px rgba(0, 0, 0, 0.03), 0px 12px 10px rgba(0, 0, 0, 0.04), 0px 25px 18px rgba(0, 0, 0, 0.04), 0px 0px 80px rgba(0, 0, 0, 0.07);',
