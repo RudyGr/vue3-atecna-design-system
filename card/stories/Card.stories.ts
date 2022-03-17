@@ -31,7 +31,7 @@ Primary.args = {
   type: 'Type de carte',
   date: '17 mars 2022',
   title: 'Title here',
-  meta: 'Put a long subtitle here',
+  subTitle: 'Put a long subtitle here',
   desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus amet repudiandae reiciendis ea quia numquam tenetur quos itaque debitis! Soluta sed quidem est deleniti, nulla ducimus dignissimos porro itaque fugit?',
 };
 
@@ -42,7 +42,19 @@ Secondary.args = {
   type: 'Type de carte',
   date: '17 mars 2022',
   title: 'Title here',
-  meta: 'Put a long subtitle here',
+  subTitle: 'Put a long subtitle here',
   desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus amet repudiandae reiciendis ea quia numquam tenetur quos itaque debitis! Soluta sed quidem est deleniti, nulla ducimus dignissimos porro itaque fugit?',
   doubleButton: false,
+};
+
+export const isNew = Template.bind({});
+isNew.args = {
+  ...Primary.args,
+  isNew: true,
+};
+
+export const isNew2 = Template.bind({});
+isNew2.args = {
+  ...Secondary.args,
+  isNew: true,
 };

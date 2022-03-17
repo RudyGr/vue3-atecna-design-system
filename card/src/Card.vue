@@ -1,5 +1,6 @@
 <template>
   <div class="card">
+    <div v-if="isNew" class="new">New</div>
     <img class="image" :src="img" />
     <div class="content">
       <div class="type">
@@ -8,7 +9,7 @@
       </div>
 
       <h1 class="title">{{ title }}</h1>
-      <h3 class="meta">{{ meta }}</h3>
+      <h3 class="meta">{{ subTitle }}</h3>
 
       <div class="description">{{ desc }}</div>
 
@@ -30,6 +31,10 @@ import Button from '~/button/src/Button.vue';
 type CardType = 'offer';
 
 const props = defineProps({
+  isNew: {
+    type: Boolean,
+    default: false,
+  },
   img: {
     type: String,
   },
@@ -38,14 +43,14 @@ const props = defineProps({
     required: true,
   },
   date: {
-    type: String,
+    type: Date,
     required: true,
   },
   title: {
     type: String,
     required: true,
   },
-  meta: {
+  subTitle: {
     type: String,
     required: false,
   },
@@ -66,6 +71,16 @@ $border-radius: 10px;
 .card {
   color: #0b1d43;
   border-radius: $border-radius;
+
+  .new {
+    position: absolute;
+    z-index: 10;
+    background-color: #0b1d43;
+    color: white;
+    padding: 4px 16px;
+    margin: 16px;
+    border-radius: 4px;
+  }
 
   .image {
     border-radius: $border-radius $border-radius 0 0;
