@@ -13,8 +13,12 @@
       <div class="description">{{ desc }}</div>
 
       <div class="buttons">
-        <Button class="btn" variant="secondary">Button 1</Button>
-        <Button class="btn">Button 2</Button>
+        <Button @click="$emit('click-btn-1')" class="btn" variant="secondary">
+          Button 1
+        </Button>
+        <Button v-if="doubleButton" @click="$emit('click-btn-2')" class="btn"
+          >Button 2</Button
+        >
       </div>
     </div>
   </div>
@@ -48,6 +52,10 @@ const props = defineProps({
   desc: {
     type: String,
     required: true,
+  },
+  doubleButton: {
+    type: Boolean,
+    default: true,
   },
 });
 </script>
@@ -88,7 +96,7 @@ $border-radius: 10px;
       .btn {
         flex: 1;
 
-        &:last-child {
+        &:nth-child(2) {
           margin-left: 16px;
         }
       }
