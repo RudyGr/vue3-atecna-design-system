@@ -12,7 +12,7 @@ First, you'll need to import the button component:
 import Button from '@divriots/starter-vue3/button/src/Button.vue';
 ```
 
-Component Button currently only implements a variant prop which can take 3 values - `primary`, `secondary` and `disabled`:
+Component Button currently only implements a variant prop which can take 3 values - `primary`, `secondary` and `minimal`:
 
 ## Primary
 
@@ -32,11 +32,11 @@ export const secondary = () => ({
 });
 ```
 
-## Disabled
+## Minimal
 
 ```js preview-story
-export const disabled = () => ({
+export const Minimal = () => ({
   components: { Button },
-  template: `<Button variant="disabled">Disabled</Button>`,
+  template: `<Button variant="minimal">Minimal</Button>`,
 });
 ```
