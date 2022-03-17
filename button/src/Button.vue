@@ -1,5 +1,8 @@
 <template>
-  <button :class="[$style.btn, $style[variant], rounded ? $style.rounded : '']">
+  <button
+    @click="$emit('click')"
+    :class="[$style.btn, $style[variant], rounded ? $style.rounded : '']"
+  >
     <slot></slot>
   </button>
 </template>
@@ -11,7 +14,11 @@ import { ButtonType } from './types';
 const props = defineProps({
   name: { type: String, default: 'John Doe' },
   variant: { type: String as PropType<ButtonType>, default: 'primary' },
-  rounded: { type: Boolean, default: false },
+  rounded: { type: Boolean, default: true },
+});
+
+const emits = defineEmits({
+  click: null,
 });
 </script>
 

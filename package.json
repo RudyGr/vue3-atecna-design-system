@@ -15,6 +15,7 @@
   "devDependencies": {
     "@divriots/dockit-core": "^0.7.2",
     "@vue/test-utils": "latest",
+    "date-fns": "^2.28.0",
     "lit": "^2.0.2",
     "prettier": "^2.3.2"
   }
